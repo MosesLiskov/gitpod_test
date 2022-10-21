@@ -1,2 +1,2 @@
 using Pkg
-Pkg.add(https://github.com/mitre/ElectionGuardVerifier.jl);
+Pkg.add(url="https://github.com/mitre/ElectionGuardVerifier.jl");
