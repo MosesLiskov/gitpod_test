@@ -6,7 +6,4 @@ tar -xzf julia-1.8.2-linux-x86_64.tar.gz
 sudo mv julia-1.8.2/ /opt/
 sudo ln -s /opt/julia-1.8.2/bin/julia /usr/local/bin/julia
 rm julia-1.8.2-linux-x86_64.tar.gz
-exec julia --eval '
-using Pkg
-Pkg.add(https://github.com/mitre/ElectionGuardVerifier.jl);
-'
+julia installMEV.jl
