@@ -9,5 +9,6 @@ rm julia-1.8.2-linux-x86_64.tar.gz
 julia installMEV.jl
 sudo cp verify.sh /usr/local/bin/verify
 sudo chmod a+x /usr/local/bin/verify
-cd example_record
-echo 'Enter "verify" to run the verifier in the local directory.'
+echo 'Welcome to the MITRE Verifier gitpod.'
+echo 'You can run the verifier yourself on our sample data.'
+echo 'Enter "cd example" and then "verify".'
