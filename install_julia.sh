@@ -7,3 +7,9 @@ sudo mv julia-1.8.2/ /opt/
 sudo ln -s /opt/julia-1.8.2/bin/julia /usr/local/bin/julia
 rm julia-1.8.2-linux-x86_64.tar.gz
 julia installMEV.jl
+sudo cp verify.sh /usr/local/bin/verify
+sudo chmod a+x /usr/local/bin/verify
+wget https://github.com/microsoft/electionguard/releases/download/v1.1/sample-data.zip
+unzip sample-data.zip
+cd sample-data
+echo 'Enter "verify" to run the verifier in the local directory.'
